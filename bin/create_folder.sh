@@ -9,8 +9,8 @@ then
 	echo "Test création $folder :"
 	if [ ! -d ${homeproject}/html/$folder ]
 	then
-	    mkdir -p  ${homeproject}/html/$folder
-	    chown -R ec2-user:ec2-user $folder
+	    mkdir -p ${homeproject}/html/$folder
+	    chown -R ec2-user:ec2-user ${homeproject}/html/$folder
     	    echo "ok"
 	else
 	    echo "ko"

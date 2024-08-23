@@ -10,6 +10,8 @@ then
 	if [ ! -d ${homeproject}/html/$folder ]
 	then
 	    mkdir -p ${homeproject}/html/$folder
+	    echo "Welcome !" > ${homeproject}/html/$folder/index.html
+
 	    chown -R ec2-user:ec2-user ${homeproject}/html/$folder
     	    echo "ok"
 	else

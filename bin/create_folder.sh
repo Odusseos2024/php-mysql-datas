@@ -33,7 +33,7 @@ then
 	then
 	    # Directory Creation
 	    mkdir -p ${html_dir}/$site
-	    echo "Welcome !" > ${html_dir}/$site/index.html
+	    echo "Welcome to ${site} !" > ${html_dir}/$site/index.html
 	    chown -R $user:$user ${html_dir}/$site
 
 	    # Compose Generation from Template
